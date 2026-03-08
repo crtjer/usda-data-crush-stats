@@ -1,5 +1,6 @@
-data/bronze/
+data/raw/
 data/silver/
 __pycache__/
 *.pyc
 .env
+*.egg-info/

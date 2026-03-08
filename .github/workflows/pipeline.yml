@@ -1,0 +1,75 @@
+name: USDA Grape Crush Pipeline
+
+on:
+  schedule:
+    - cron: '0 10 15 3 *'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Single year to process (e.g. 2024). Leave empty for full range.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        id: run_pipeline
+        run: |
+          if [ -n "${{ github.event.inputs.year }}" ]; then
+            python -m pipeline.run --year ${{ github.event.inputs.year }}
+          else
+            python -m pipeline.run
+          fi
+
+      - name: Commit data/final/ if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/final/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update Gold layer data [automated]"
+            git push
+          fi
+
+      - name: Create release on success
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="v$(date +%Y%m%d)"
+          gh release create "$TAG" \
+            --title "Data Update $TAG" \
+            --notes "Automated pipeline run on $(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            data/final/*.csv data/final/validation_report.json \
+            || echo "Release $TAG may already exist; skipping."
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Pipeline failure on $(date -u +%Y-%m-%d)" \
+            --body "The USDA Grape Crush data pipeline failed. Check the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details." \
+            --label "bug"

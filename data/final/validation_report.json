@@ -1,0 +1,47 @@
+{
+  "run_at": "2026-03-08T16:31:28.980732+00:00",
+  "checks_passed": 8,
+  "checks_failed": 0,
+  "details": [
+    {
+      "check": "expected_years_present",
+      "passed": true,
+      "message": "All expected years 2016-2024 present."
+    },
+    {
+      "check": "no_null_tons_crushed",
+      "passed": "True",
+      "message": "NULL tons_crushed count: 0"
+    },
+    {
+      "check": "dim_district_19_rows",
+      "passed": true,
+      "message": "dim_district has 19 rows (expected 19)."
+    },
+    {
+      "check": "dim_grape_variety_100_plus",
+      "passed": true,
+      "message": "dim_grape_variety has 369 varieties."
+    },
+    {
+      "check": "no_negative_values",
+      "passed": true,
+      "message": "No negative values found."
+    },
+    {
+      "check": "most_recent_year_present",
+      "passed": true,
+      "message": "Most recent year in data: 2024."
+    },
+    {
+      "check": "fact_crush_stats_has_data",
+      "passed": true,
+      "message": "fact_crush_stats has 64213 rows."
+    },
+    {
+      "check": "fact_crush_summary_has_data",
+      "passed": true,
+      "message": "fact_crush_summary has 20548 rows."
+    }
+  ]
+}
