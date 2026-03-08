@@ -1,0 +1,5 @@
+data/bronze/
+data/silver/
+__pycache__/
+*.pyc
+.env
