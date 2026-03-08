@@ -39,6 +39,22 @@ KNOWN_ZIP_URLS = {
     2018: f"{NASS_FINAL}/2018/2018gcbxls.zip",
     2017: f"{NASS_FINAL}/2017/201703gcbxls.zip",
     2016: f"{NASS_FINAL}/2016/201603gcbxls.zip",
+    2015: f"{NASS_FINAL}/2015/201503gcbxls.zip",
+    2014: f"{NASS_FINAL}/2014/201403gcbxls.zip",
+    2013: f"{NASS_FINAL}/2013/201303gcbxls.zip",
+    2012: f"{NASS_FINAL}/2012/201203gcbxls.zip",
+    2011: f"{NASS_FINAL}/2011/201103gcbxls.zip",
+    2010: f"{NASS_FINAL}/2010/201003gcbxls.zip",
+    2009: f"{NASS_FINAL}/2009/200903gcbxls.zip",
+    2008: f"{NASS_FINAL}/2008/200803gcbxls.zip",
+    2007: f"{NASS_FINAL}/2007/200703gcbxls.zip",
+    2006: f"{NASS_FINAL}/2006/200603gcbxls.zip",
+    2005: f"{NASS_FINAL}/2005/200503gcbxls.zip",
+    2004: f"{NASS_FINAL}/2004/200403gcbxls.zip",
+    2003: f"{NASS_FINAL}/2003/200303gcbxls.zip",
+    2002: f"{NASS_FINAL}/2002/200203gcbxls.zip",
+    2001: f"{NASS_FINAL}/2001/200109gcbxls.zip",
+    2000: f"{NASS_FINAL}/2000/200003gcbxls.zip",
 }
 
 # Errata ZIPs (prefer over Final when available)
@@ -49,6 +65,11 @@ ERRATA_ZIP_URLS = {
     2018: f"{NASS_ERRATA}/2018/2018errata.gcbxls.zip",
     2017: f"{NASS_ERRATA}/2017/2017erratagcbtb.zip",
     2016: f"{NASS_ERRATA}/2016/201708errataxls.zip",
+    2015: f"{NASS_ERRATA}/2015/201608errataxls.zip",
+    2014: f"{NASS_ERRATA}/2014/201507errataxls.zip",
+    2013: f"{NASS_ERRATA}/2013/201406errataxls.zip",
+    2012: f"{NASS_ERRATA}/2012/201208gcbxls.zip",
+    2011: f"{NASS_ERRATA}/2011/201107errataxls.zip",
 }
 
 SESSION = requests.Session()
@@ -93,30 +114,27 @@ def _extract_tb08_from_zip(zip_path: Path, year: int) -> bool:
     try:
         with zipfile.ZipFile(zip_path, "r") as zf:
             names = zf.namelist()
-            # Find TB08 file (XLSX or CSV)
-            tb08_file = None
+            tb08_files = []
             # First pass: exact tb08 match, exclude supplements
             for name in names:
                 lower = name.lower()
                 if "supplement" in lower:
                     continue
                 if "tb08" in lower or "tb_08" in lower:
-                    tb08_file = name
-                    break
-            if not tb08_file:
+                    tb08_files.append(name)
+            if not tb08_files:
                 # Second pass: broader "08" match, exclude supplements
                 for name in names:
                     lower = name.lower()
                     if "supplement" in lower:
                         continue
                     if lower.endswith((".xlsx", ".xls", ".csv")) and ("08" in lower or "table8" in lower or "table_8" in lower):
-                        tb08_file = name
-                        break
-            if tb08_file:
+                        tb08_files.append(name)
+            if tb08_files:
                 dest_dir = zip_path.parent
-                zf.extract(tb08_file, dest_dir)
-                extracted = dest_dir / tb08_file
-                print(f"  [{year}] Extracted {tb08_file} from ZIP")
+                for tb08_file in tb08_files:
+                    zf.extract(tb08_file, dest_dir)
+                    print(f"  [{year}] Extracted {tb08_file} from ZIP")
                 return True
             else:
                 # Extract all files - we'll find what we need later
@@ -215,6 +233,6 @@ def download_all(years: list[int], force: bool = False) -> dict:
 
 if __name__ == "__main__":
     import sys
-    years = list(range(2016, 2025))
+    years = list(range(2000, 2025))
     force = "--force" in sys.argv
     download_all(years, force=force)

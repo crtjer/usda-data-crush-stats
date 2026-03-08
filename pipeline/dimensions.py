@@ -139,5 +139,5 @@ def build_all_dimensions(years: list[int]) -> None:
 
 
 if __name__ == "__main__":
-    years = list(range(2016, 2025))
+    years = list(range(2000, 2025))
     build_all_dimensions(years)

@@ -7,7 +7,7 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parent.parent
 GOLD_DIR = BASE_DIR / "data" / "gold"
 
-EXPECTED_YEARS = set(range(2016, 2025))
+EXPECTED_YEARS = set(range(2000, 2025))
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:

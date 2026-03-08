@@ -43,7 +43,8 @@ def _find_tb08_files(year: int) -> list[Path]:
                     continue
                 if ext == "*.xls" and f.name.endswith(".xlsx"):
                     continue
-                if "tb08" in lower or "tb_08" in lower or "table08" in lower:
+                # Match tb08, tb_08, table08, and multi-part files like tb081, tb082
+                if re.search(r'tb0?8\d?', lower) or "tb_08" in lower or "table08" in lower:
                     results.append(f)
 
     # Broader search for "08" in name
@@ -107,6 +108,7 @@ def _parse_xls_tb08(filepath: Path, year: int) -> pd.DataFrame | None:
                 sheet_name = s
                 break
     if not sheet_name:
+        # Use first sheet (common for older files where sheet = filename)
         sheet_name = xl.sheet_names[0]
 
     raw = xl.parse(sheet_name, header=None)
@@ -290,26 +292,31 @@ def parse_year(year: int) -> pd.DataFrame | None:
         print(f"  [{year}] No TB08 files found")
         return None
 
-    df = None
-    filepath = None
+    # Parse all matching files and combine (handles multi-part files like tb081/tb082)
+    frames = []
+    parsed_names = []
 
-    for f in files:
-        filepath = f
+    for f in sorted(files):
         if f.suffix.lower() == ".csv":
-            df = _parse_csv_tb08(f)
-            if df is not None:
-                df = _normalize_columns(df)
-                break
+            part_df = _parse_csv_tb08(f)
+            if part_df is not None:
+                part_df = _normalize_columns(part_df)
+                frames.append(part_df)
+                parsed_names.append(f.name)
+                break  # CSV files contain all data
         elif f.suffix.lower() in (".xls", ".xlsx"):
-            df = _parse_xls_tb08(f, year)
-            if df is not None:
-                break
+            part_df = _parse_xls_tb08(f, year)
+            if part_df is not None:
+                frames.append(part_df)
+                parsed_names.append(f.name)
 
-    if df is None or len(df) == 0:
+    if not frames:
         print(f"  [{year}] No readable/parseable files found")
         return None
 
-    print(f"  [{year}] Read {filepath.name}: {len(df)} rows, {len(df.columns)} cols")
+    df = pd.concat(frames, ignore_index=True) if len(frames) > 1 else frames[0]
+    names_str = " + ".join(parsed_names)
+    print(f"  [{year}] Read {names_str}: {len(df)} rows, {len(df.columns)} cols")
 
     # Check we have required columns
     required = ["district", "variety_code", "tons"]
@@ -381,5 +388,5 @@ def parse_all(years: list[int]) -> tuple[int, int]:
 
 
 if __name__ == "__main__":
-    years = list(range(2016, 2025))
+    years = list(range(2000, 2025))
     parse_all(years)

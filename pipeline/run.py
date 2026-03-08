@@ -27,7 +27,7 @@ def parse_years(years_str: str) -> list[int]:
 
 def main():
     parser = argparse.ArgumentParser(description="USDA Grape Crush Data Pipeline")
-    parser.add_argument("--years", default="2016-2024",
+    parser.add_argument("--years", default="2000-2024",
                         help="Years to process: '2016-2024' or '2020,2021,2024'")
     parser.add_argument("--force", action="store_true",
                         help="Force re-download of all files")

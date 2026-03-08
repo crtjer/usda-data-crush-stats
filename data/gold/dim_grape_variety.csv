@@ -131,150 +131,240 @@ variety_code,variety_name,grape_type_code,grape_type_name,grape_category
 7082,Grenache Gris,7,Wine Grapes (White),wine
 7085,Assyrtiko 3/,7,Wine Grapes (White),wine
 7147,Verdelho,7,Wine Grapes (White),wine
-10859,Dornfelder,6,Wine Grapes (Red),wine
-12013,Meunier,6,Wine Grapes (Red),wine
-12182,Aleatico,6,Wine Grapes (Red),wine
-14308,Pristine,4,Raisin Grapes,raisin
-14321,Grignolino,6,Wine Grapes (Red),wine
-15912,Montepulciano,6,Wine Grapes (Red),wine
-16375,Cabernet Sauvignon,6,Wine Grapes (Red),wine
-16512,Refosco,6,Wine Grapes (Red),wine
-16594,Allison,4,Raisin Grapes,raisin
-17459,Grenache Blanc,7,Wine Grapes (White),wine
-17712,Gewurztraminer,7,Wine Grapes (White),wine
-17935,Salvador,6,Wine Grapes (Red),wine
-18467,White Riesling,7,Wine Grapes (White),wine
-18566,Princess,4,Raisin Grapes,raisin
-18631,Freisa,6,Wine Grapes (Red),wine
-19036,Vintage Red,4,Raisin Grapes,raisin
-19196,Primitivo,6,Wine Grapes (Red),wine
-20068,Nebbiolo,6,Wine Grapes (Red),wine
-20393,Triplett Blanc,7,Wine Grapes (White),wine
-20660,Negrette,6,Wine Grapes (Red),wine
-21761,Sugraone,4,Raisin Grapes,raisin
-22314,Sauvignon Blanc,7,Wine Grapes (White),wine
-22394,Other Table  b/,4,Raisin Grapes,raisin
-23153,Merlot,6,Wine Grapes (Red),wine
-23166,Muscat of Alexandria,7,Wine Grapes (White),wine
-25369,Zinfandel,6,Wine Grapes (Red),wine
-26040,Grenache Gris,7,Wine Grapes (White),wine
-26526,Sauvignon Vert,7,Wine Grapes (White),wine
-27563,Melon,7,Wine Grapes (White),wine
-28481,Petite Sirah,6,Wine Grapes (Red),wine
-28581,Sauvignon Gris,7,Wine Grapes (White),wine
-28721,Pinotage,6,Wine Grapes (Red),wine
-29360,Monastrell,6,Wine Grapes (Red),wine
-29589,Blanc Seedless,4,Raisin Grapes,raisin
-29797,Muscat Blanc,7,Wine Grapes (White),wine
-29918,Negroamaro,6,Wine Grapes (Red),wine
-30043,Cabernet Franc,6,Wine Grapes (Red),wine
-30097,Segalin,6,Wine Grapes (Red),wine
-31428,Chardonnay,7,Wine Grapes (White),wine
-31491,Touriga Nacional,6,Wine Grapes (Red),wine
-31763,Graciano,6,Wine Grapes (Red),wine
-33053,Viognier,7,Wine Grapes (White),wine
-33141,Arra,4,Raisin Grapes,raisin
-33165,St. Emilion,7,Wine Grapes (White),wine
-33342,Tinta Madeira,6,Wine Grapes (Red),wine
-33522,Cinsaut,6,Wine Grapes (Red),wine
-33559,Cabernet Dorsa,6,Wine Grapes (Red),wine
-34417,Alicante Bouschet,6,Wine Grapes (Red),wine
-38604,Sangiovese,6,Wine Grapes (Red),wine
-39142,Ribolla Gialla,7,Wine Grapes (White),wine
-40039,St Laurent,6,Wine Grapes (Red),wine
-40971,Tannat,6,Wine Grapes (Red),wine
-41458,Durif,6,Wine Grapes (Red),wine
-43766,Petit Verdot,6,Wine Grapes (Red),wine
-44248,Pinot Noir,6,Wine Grapes (Red),wine
-44670,Other Red  b/,6,Wine Grapes (Red),wine
-44940,Other Table,6,Wine Grapes (Red),wine
-45116,Verdelho,7,Wine Grapes (White),wine
-45369,Scarlet,4,Raisin Grapes,raisin
-46221,Malbec,6,Wine Grapes (Red),wine
-46818,Sagrantino,6,Wine Grapes (Red),wine
-46902,Pecorino,7,Wine Grapes (White),wine
-46976,Nero D'Avola,6,Wine Grapes (Red),wine
-47557,Arinarnoa,6,Wine Grapes (Red),wine
-48813,Sweet Sunshine,4,Raisin Grapes,raisin
-49036,Carnelian,6,Wine Grapes (Red),wine
-49168,Ribier,4,Raisin Grapes,raisin
-49230,Cortese,7,Wine Grapes (White),wine
-50014,Carignane,6,Wine Grapes (Red),wine
-50806,Fiano,7,Wine Grapes (White),wine
-53031,Aglianico,6,Wine Grapes (Red),wine
-53213,Valdiguie,6,Wine Grapes (Red),wine
-55407,Arneis,7,Wine Grapes (White),wine
-55475,Muscat Orange,7,Wine Grapes (White),wine
-56942,Tinta Cao,6,Wine Grapes (Red),wine
-57637,Autumn Royal,4,Raisin Grapes,raisin
-58269,Ciliegiolo,6,Wine Grapes (Red),wine
-59307,Marsanne,7,Wine Grapes (White),wine
-59790,Flame Seedless,4,Raisin Grapes,raisin
-60553,Jubilee,4,Raisin Grapes,raisin
-60744,Lagrein,6,Wine Grapes (Red),wine
-61106,Flame Tokay,6,Wine Grapes (Red),wine
-61269,Tempranillo,6,Wine Grapes (Red),wine
-61658,Syrah,6,Wine Grapes (Red),wine
-61711,Alvarinho,6,Wine Grapes (Red),wine
-61932,Symphony,7,Wine Grapes (White),wine
-62366,Red Globe,6,Wine Grapes (Red),wine
-62554,Counoise,6,Wine Grapes (Red),wine
-62889,Autumn King,4,Raisin Grapes,raisin
-63062,Fiesta,4,Raisin Grapes,raisin
-64099,Picpoul Blanc,7,Wine Grapes (White),wine
-64372,Pinot Blanc,7,Wine Grapes (White),wine
-64408,Sylvaner,7,Wine Grapes (White),wine
-64541,Carmenere,6,Wine Grapes (Red),wine
-64909,Verdejo,7,Wine Grapes (White),wine
-65120,Palomino,7,Wine Grapes (White),wine
-65453,Mission,6,Wine Grapes (Red),wine
-65906,Gray Riesling,7,Wine Grapes (White),wine
-66732,Ruby Cabernet,6,Wine Grapes (Red),wine
-66760,Torrontes,7,Wine Grapes (White),wine
-67728,Malaga,4,Raisin Grapes,raisin
-68502,Mataro,6,Wine Grapes (Red),wine
-68772,Mourvedre,6,Wine Grapes (Red),wine
-70275,Burger,7,Wine Grapes (White),wine
-70792,Cotton Candy,4,Raisin Grapes,raisin
-71663,Gamay (Napa),6,Wine Grapes (Red),wine
-71917,Other Red,6,Wine Grapes (Red),wine
-72317,Royalty,6,Wine Grapes (Red),wine
-75070,Grenache,6,Wine Grapes (Red),wine
-76129,Gamay Noir Au Jus Blanc,6,Wine Grapes (Red),wine
-76581,Blaufraenkisch,6,Wine Grapes (Red),wine
-76676,Teroldego,6,Wine Grapes (Red),wine
-77828,Trousseau,6,Wine Grapes (Red),wine
-78445,Semillon,7,Wine Grapes (White),wine
-78510,Rouge,4,Raisin Grapes,raisin
-79153,Emerald Seedless,4,Raisin Grapes,raisin
-79226,Tocai Friulano,7,Wine Grapes (White),wine
-79993,Vermentino,7,Wine Grapes (White),wine
-80210,Flora,7,Wine Grapes (White),wine
-81505,Moscato Gaillo,7,Wine Grapes (White),wine
-81525,Other White  b/,7,Wine Grapes (White),wine
-81812,Souzao,6,Wine Grapes (Red),wine
-82756,Centurian,6,Wine Grapes (Red),wine
-82937,Chenin Blanc,7,Wine Grapes (White),wine
-83390,Thompson Seedless,4,Raisin Grapes,raisin
-83963,Ivory Seedless,4,Raisin Grapes,raisin
-85026,Other Raisin  b/,4,Raisin Grapes,raisin
-86689,French Colombard,7,Wine Grapes (White),wine
-86971,Muscat Hamburg,6,Wine Grapes (Red),wine
-87490,Ruby Seedless,4,Raisin Grapes,raisin
-88454,Barbera,6,Wine Grapes (Red),wine
-89963,Rubired,6,Wine Grapes (Red),wine
-90973,Scarlet Royal,4,Raisin Grapes,raisin
-91140,Malvasia Bianca,7,Wine Grapes (White),wine
-92795,Italia,4,Raisin Grapes,raisin
-93069,Roussanne,7,Wine Grapes (White),wine
-93724,Pinot Gris,7,Wine Grapes (White),wine
-93846,Sauvignon Musque,7,Wine Grapes (White),wine
-94246,Albarino,7,Wine Grapes (White),wine
-94831,Summer Royal,4,Raisin Grapes,raisin
-95674,Charbono,6,Wine Grapes (Red),wine
-96052,Ivory,4,Raisin Grapes,raisin
-96455,Vernaccia,7,Wine Grapes (White),wine
-97404,Crimson Seedless,4,Raisin Grapes,raisin
-98006,Gruner Veltliner,7,Wine Grapes (White),wine
-98318,Other White,7,Wine Grapes (White),wine
-98360,Dolcetto,6,Wine Grapes (Red),wine
+10119,Sauvignon Gris,7,Wine Grapes (White),wine
+10631,Pinot Noir (Cont'd),6,Wine Grapes (Red),wine
+11000,Salvador,6,Wine Grapes (Red),wine
+11483,Sangioveto,6,Wine Grapes (Red),wine
+11644,Touriga,6,Wine Grapes (Red),wine
+12370,Selma Pete,4,Raisin Grapes,raisin
+12726,French Colombard,7,Wine Grapes (White),wine
+12753,Royalty,6,Wine Grapes (Red),wine
+12964,Pfeffer Cabernet,6,Wine Grapes (Red),wine
+13002,De Chaunac,6,Wine Grapes (Red),wine
+13053,Gamay,6,Wine Grapes (Red),wine
+13678,Vermentino,7,Wine Grapes (White),wine
+14430,Moscato Gaillo,7,Wine Grapes (White),wine
+14767,Picpoul Blanc,7,Wine Grapes (White),wine
+15560,Grenache Gris,7,Wine Grapes (White),wine
+15793,Freisa,6,Wine Grapes (Red),wine
+16247,Blaufraenkisch,6,Wine Grapes (Red),wine
+16348,Autumn Royal,5,Table Grapes,table
+16361,Petite Sirah,6,Wine Grapes (Red),wine
+17523,Green Hungarian,7,Wine Grapes (White),wine
+17786,Concord,4,Raisin Grapes,raisin
+17807,Diamond Muscat,4,Raisin Grapes,raisin
+18006,Autumn Seedless,4,Raisin Grapes,raisin
+18067,Other Table  b/,4,Raisin Grapes,raisin
+18631,Teroldego,6,Wine Grapes (Red),wine
+19104,Verdejo,7,Wine Grapes (White),wine
+19475,Carmenere,6,Wine Grapes (Red),wine
+19490,Allison,4,Raisin Grapes,raisin
+19500,Red Seedless,4,Raisin Grapes,raisin
+19504,Mission,6,Wine Grapes (Red),wine
+19644,Kleinberger,7,Wine Grapes (White),wine
+20477,White Riesling,7,Wine Grapes (White),wine
+21057,Grenache Blanc,7,Wine Grapes (White),wine
+21269,Chasselas Dore,7,Wine Grapes (White),wine
+21782,Grignolino,6,Wine Grapes (Red),wine
+21811,Cabernet Franc (Cont'd),6,Wine Grapes (Red),wine
+22222,Tinta Cao,6,Wine Grapes (Red),wine
+22300,St.  Emilion,7,Wine Grapes (White),wine
+22639,Fiesta,4,Raisin Grapes,raisin
+23250,Sugraone,4,Raisin Grapes,raisin
+23364,Chardonnay,7,Wine Grapes (White),wine
+23415,Sauvignon Blanc (Cont'd),7,Wine Grapes (White),wine
+23656,Thompson Seedless,4,Raisin Grapes,raisin
+23791,Nebbiolo,6,Wine Grapes (Red),wine
+24083,Exotic,4,Raisin Grapes,raisin
+24338,St. Emilion * (Cont'd),7,Wine Grapes (White),wine
+24345,Summer Muscat,5,Table Grapes,table
+25376,Petite Sirah (Cont'd),6,Wine Grapes (Red),wine
+26217,Muscat Blanc,7,Wine Grapes (White),wine
+26341,Perelli,6,Wine Grapes (Red),wine
+26438,Other Red  b/,6,Wine Grapes (Red),wine
+26810,Marechal Foch,6,Wine Grapes (Red),wine
+28474,Jubilee,4,Raisin Grapes,raisin
+28650,Calmeria,4,Raisin Grapes,raisin
+28690,Nero D'Avola,6,Wine Grapes (Red),wine
+30071,Alvarelhao,6,Wine Grapes (Red),wine
+30203,Rubired,6,Wine Grapes (Red),wine
+30613,French Colombard (Cont'd),7,Wine Grapes (White),wine
+30924,Marroo Seedless,5,Table Grapes,table
+31282,Muscat of Alexandria (Cont',7,Wine Grapes (White),wine
+32224,Merlot (Cont'd),6,Wine Grapes (Red),wine
+32834,Aleatico,6,Wine Grapes (Red),wine
+33091,Syrah,6,Wine Grapes (Red),wine
+34451,Muscat Hamburg,6,Wine Grapes (Red),wine
+34464,Cabernet Franc,6,Wine Grapes (Red),wine
+34514,Black Prince,6,Wine Grapes (Red),wine
+34788,Flame Seedless,4,Raisin Grapes,raisin
+35052,Sweet Scarlet,4,Raisin Grapes,raisin
+36031,Roussanne (Cont'd),7,Wine Grapes (White),wine
+36124,Dolcetto,6,Wine Grapes (Red),wine
+36427,Packinghouse Culls,5,Table Grapes,table
+36450,Kerner,7,Wine Grapes (White),wine
+36494,Grenache * (Cont'd),6,Wine Grapes (Red),wine
+37132,Montonico,7,Wine Grapes (White),wine
+37901,Montepulciano,6,Wine Grapes (Red),wine
+38075,Cinsault,6,Wine Grapes (Red),wine
+38364,Merlot,6,Wine Grapes (Red),wine
+38382,Gamay (Napa),6,Wine Grapes (Red),wine
+38871,Fer Servadou,6,Wine Grapes (Red),wine
+38893,Tempranillo,6,Wine Grapes (Red),wine
+39030,Autumn King,4,Raisin Grapes,raisin
+39748,Alvarinho,6,Wine Grapes (Red),wine
+39809,Torrontes,7,Wine Grapes (White),wine
+40558,Touriga Francesca,6,Wine Grapes (Red),wine
+41125,Negroamaro,6,Wine Grapes (Red),wine
+41250,Sangiovese,6,Wine Grapes (Red),wine
+41311,Tocai Friulano,7,Wine Grapes (White),wine
+41448,Crimson Seedless,5,Table Grapes,table
+41592,Syrah * (Cont'd),6,Wine Grapes (Red),wine
+44242,Mourvedre,6,Wine Grapes (Red),wine
+44472,Carmeniere,6,Wine Grapes (Red),wine
+45034,Ribolla Gialla,7,Wine Grapes (White),wine
+45101,Verdelho,6,Wine Grapes (Red),wine
+45160,Black Emerald,5,Table Grapes,table
+45337,Valdiguie,6,Wine Grapes (Red),wine
+46105,Muscat Orange,7,Wine Grapes (White),wine
+46236,Carnelian,6,Wine Grapes (Red),wine
+46252,Scarlet Royal,4,Raisin Grapes,raisin
+46275,Cotton Candy,4,Raisin Grapes,raisin
+47628,Malaga,4,Raisin Grapes,raisin
+47877,Marsanne,7,Wine Grapes (White),wine
+48190,Black Corinth,4,Raisin Grapes,raisin
+48359,Roussanne,7,Wine Grapes (White),wine
+48592,Other Red,6,Wine Grapes (Red),wine
+49183,Dornfelder,6,Wine Grapes (Red),wine
+49194,Other White  b/,7,Wine Grapes (White),wine
+49257,Trousseau,6,Wine Grapes (Red),wine
+49459,Other Red b/,6,Wine Grapes (Red),wine
+49922,Beclan,6,Wine Grapes (Red),wine
+50052,Portugieser Blauer,6,Wine Grapes (Red),wine
+50252,Zinfandel (Cont'd),6,Wine Grapes (Red),wine
+50783,Cortese,7,Wine Grapes (White),wine
+50840,Sagrantino,6,Wine Grapes (Red),wine
+51081,Early Burgundy,6,Wine Grapes (Red),wine
+51588,Vernaccia,7,Wine Grapes (White),wine
+52278,Other Raisin  b/,4,Raisin Grapes,raisin
+52654,Cabernet Sauvignon (Cont'd),6,Wine Grapes (Red),wine
+52783,Petite Verdot,6,Wine Grapes (Red),wine
+52910,Semillon (Cont'd),7,Wine Grapes (White),wine
+53302,Emperor,4,Raisin Grapes,raisin
+53373,Red Crimson,4,Raisin Grapes,raisin
+53493,Salvador (Cont'd),6,Wine Grapes (Red),wine
+53558,Terret Noir,6,Wine Grapes (Red),wine
+54448,Black Monukka,4,Raisin Grapes,raisin
+54936,Gamay Beaujolais,6,Wine Grapes (Red),wine
+55114,Tannat,6,Wine Grapes (Red),wine
+55310,Symphony,7,Wine Grapes (White),wine
+55736,Pedro Ximenes,7,Wine Grapes (White),wine
+56051,Rubired * (Cont'd),6,Wine Grapes (Red),wine
+56091,Pinot Gris,7,Wine Grapes (White),wine
+56714,Malbec (Cont'd),6,Wine Grapes (Red),wine
+56811,Cinsaut,6,Wine Grapes (Red),wine
+57170,Ribier,4,Raisin Grapes,raisin
+57701,Tinta Barroca,6,Wine Grapes (Red),wine
+58223,Sultana,4,Raisin Grapes,raisin
+58436,Charbono,6,Wine Grapes (Red),wine
+58918,St. Emilion,7,Wine Grapes (White),wine
+58921,Primitivo (Cont'd),6,Wine Grapes (Red),wine
+59901,Lagrein,6,Wine Grapes (Red),wine
+60217,Tinta Madeira,6,Wine Grapes (Red),wine
+60631,Negrette,6,Wine Grapes (Red),wine
+61336,Sauvignon Vert,7,Wine Grapes (White),wine
+61380,Dawn Seedless,5,Table Grapes,table
+61658,Chenin Blanc,7,Wine Grapes (White),wine
+61716,Carmine,6,Wine Grapes (Red),wine
+62803,Canner,4,Raisin Grapes,raisin
+62861,Arra,4,Raisin Grapes,raisin
+63311,Malbec,6,Wine Grapes (Red),wine
+63482,Ivory,4,Raisin Grapes,raisin
+63514,Black Malvoisie,6,Wine Grapes (Red),wine
+63713,Grand Noir,6,Wine Grapes (Red),wine
+64210,Barbera,6,Wine Grapes (Red),wine
+64532,St Laurent,6,Wine Grapes (Red),wine
+64966,Petit Verdot,6,Wine Grapes (Red),wine
+65213,Ivory Seedless,4,Raisin Grapes,raisin
+65467,Pinot St George,6,Wine Grapes (Red),wine
+65764,St Emilion,7,Wine Grapes (White),wine
+65903,Counoise,6,Wine Grapes (Red),wine
+67452,St.Emilion,7,Wine Grapes (White),wine
+67652,Arneis,7,Wine Grapes (White),wine
+68179,Italia,4,Raisin Grapes,raisin
+68185,Viognier,7,Wine Grapes (White),wine
+68538,Zinfandel,6,Wine Grapes (Red),wine
+69063,Pommard,6,Wine Grapes (Red),wine
+69894,Grenache,6,Wine Grapes (Red),wine
+69986,Burger,7,Wine Grapes (White),wine
+70596,Marroo,4,Raisin Grapes,raisin
+70894,Mataro,6,Wine Grapes (Red),wine
+71350,Blanc Seedless,4,Raisin Grapes,raisin
+71707,Cabernet Dorsa,6,Wine Grapes (Red),wine
+71836,Touriga Nacional,6,Wine Grapes (Red),wine
+72838,Triplett Blanc,7,Wine Grapes (White),wine
+73013,Fiano,7,Wine Grapes (White),wine
+73450,Other White,7,Wine Grapes (White),wine
+73466,Gruner Veltliner,7,Wine Grapes (White),wine
+73647,Summer Royal,4,Raisin Grapes,raisin
+73917,Graciano,6,Wine Grapes (Red),wine
+74026,Pristine,4,Raisin Grapes,raisin
+74728,Barbera (Cont'd),6,Wine Grapes (Red),wine
+75586,Princess,5,Table Grapes,table
+75917,Other Table b/,5,Table Grapes,table
+76812,Durif,6,Wine Grapes (Red),wine
+77085,Muscat of Alexandria,7,Wine Grapes (White),wine
+78050,Vintage Red,4,Raisin Grapes,raisin
+78220,Melon,7,Wine Grapes (White),wine
+78302,Malvasia Bianca,7,Wine Grapes (White),wine
+78816,Viognier (Cont'd),7,Wine Grapes (White),wine
+79259,Cardinal,4,Raisin Grapes,raisin
+79562,Christmas Rose,4,Raisin Grapes,raisin
+79745,Perlette,4,Raisin Grapes,raisin
+81408,Colorino,6,Wine Grapes (Red),wine
+81546,Pinotage,6,Wine Grapes (Red),wine
+81942,Sylvaner,7,Wine Grapes (White),wine
+82689,Cabernet Sauvignon,6,Wine Grapes (Red),wine
+83672,Souzao,6,Wine Grapes (Red),wine
+83807,Emerald Seedless,4,Raisin Grapes,raisin
+84343,Gewurztraminer,7,Wine Grapes (White),wine
+84762,Centurian,6,Wine Grapes (Red),wine
+85292,Meunier,6,Wine Grapes (Red),wine
+86852,Carignane (Cont'd),6,Wine Grapes (Red),wine
+86909,Pinot Noir,6,Wine Grapes (Red),wine
+87050,Monastrell,6,Wine Grapes (Red),wine
+87087,Gamay Noir Au Jus Blanc,6,Wine Grapes (Red),wine
+88414,Albarino,7,Wine Grapes (White),wine
+88601,Other Table,6,Wine Grapes (Red),wine
+88992,Flora,7,Wine Grapes (White),wine
+89177,Palomino,7,Wine Grapes (White),wine
+89346,Refosco,6,Wine Grapes (Red),wine
+89470,Alicante Bouschet,6,Wine Grapes (Red),wine
+90170,Pecorino,7,Wine Grapes (White),wine
+90758,Peloursin,6,Wine Grapes (Red),wine
+91220,Scheurebe,7,Wine Grapes (White),wine
+91859,Carignane,6,Wine Grapes (Red),wine
+91963,Segalin,6,Wine Grapes (Red),wine
+92905,White Riesling * (Cont'd),7,Wine Grapes (White),wine
+93446,Dovine,4,Raisin Grapes,raisin
+94093,Red Globe,4,Raisin Grapes,raisin
+94308,Sweet Sunshine,4,Raisin Grapes,raisin
+94406,Pinot Gris * (Cont'd),7,Wine Grapes (White),wine
+94745,Rouge,5,Table Grapes,table
+95164,Ruby Cabernet,6,Wine Grapes (Red),wine
+95244,Ciliegiolo,6,Wine Grapes (Red),wine
+95621,Flame Tokay,6,Wine Grapes (Red),wine
+96439,Pinot Blanc,7,Wine Grapes (White),wine
+96730,Emerald Riesling,7,Wine Grapes (White),wine
+96743,Primitivo,6,Wine Grapes (Red),wine
+96823,Sauvignon Musque,7,Wine Grapes (White),wine
+97092,Sauvignon Blanc,7,Wine Grapes (White),wine
+97748,Arinarnoa,6,Wine Grapes (Red),wine
+98235,Semillon,7,Wine Grapes (White),wine
+98315,Ruby Seedless,4,Raisin Grapes,raisin
+98328,Scarlet,4,Raisin Grapes,raisin
+98742,Chardonnay * (Cont'd),7,Wine Grapes (White),wine
+98851,Other White b/,7,Wine Grapes (White),wine
+99029,Fantasy Seedless,4,Raisin Grapes,raisin
+99712,Gray Riesling,7,Wine Grapes (White),wine
+99809,Aglianico,6,Wine Grapes (Red),wine
