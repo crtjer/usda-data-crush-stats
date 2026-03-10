@@ -91,11 +91,22 @@ def _parse_xls_tb08(filepath: Path, year: int) -> pd.DataFrame | None:
     These files have district headers, grape type headers, and variety data rows
     in a human-readable layout, not a flat table.
     """
-    engine = "openpyxl" if filepath.suffix.lower() == ".xlsx" else "xlrd"
-    try:
-        xl = pd.ExcelFile(filepath, engine=engine)
-    except Exception:
+    suffix = filepath.suffix.lower()
+    if suffix == ".xlsx":
         xl = pd.ExcelFile(filepath, engine="openpyxl")
+    elif suffix == ".xls":
+        # Legacy Excel files are read via the xlrd engine (pandas + xlrd>=2.0.1).
+        # Raise a clear error if xlrd is missing instead of falling back to openpyxl,
+        # which cannot read the old binary XLS format.
+        try:
+            xl = pd.ExcelFile(filepath, engine="xlrd")
+        except ImportError as exc:
+            raise ImportError(
+                "xlrd>=2.0.1 is required to read legacy .xls TB08 files. "
+                "Install it with: pip install 'xlrd>=2.0.1'"
+            ) from exc
+    else:
+        raise ValueError(f"Unsupported TB08 file extension for {filepath}")
 
     # Find the right sheet
     sheet_name: str | None = None

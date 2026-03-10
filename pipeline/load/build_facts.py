@@ -25,6 +25,21 @@ def _load_crush_silver(years: list[int]) -> pd.DataFrame:
     return pd.concat(frames, ignore_index=True)
 
 
+def _load_dim_crop_year() -> pd.DataFrame:
+    """Load dim_crop_year with source_url for provenance joins."""
+    dim_path = FINAL_DIR / "dim_crop_year.csv"
+    if not dim_path.exists():
+        return pd.DataFrame(columns=["crop_year", "source_url"])
+
+    try:
+        df = pd.read_csv(dim_path, usecols=["crop_year", "source_url"])
+    except ValueError:
+        # Fallback if columns are missing or schema changed
+        return pd.DataFrame(columns=["crop_year", "source_url"])
+
+    return df
+
+
 def _build_fact_crush_stats(crush_df: pd.DataFrame) -> pd.DataFrame:
     """Build fact_crush_stats from data rows (row_type_code == 2)."""
     if crush_df.empty or "row_type_code" not in crush_df.columns:
@@ -40,6 +55,7 @@ def _build_fact_crush_stats(crush_df: pd.DataFrame) -> pd.DataFrame:
                 "wt_price_per_ton",
                 "tons_crushed",
                 "report_type",
+                "source_url",
             ]
         )
 
@@ -68,6 +84,12 @@ def _build_fact_crush_stats(crush_df: pd.DataFrame) -> pd.DataFrame:
     if "report_type" not in df.columns:
         df["report_type"] = "Final"
 
+    # Join in source_url from dim_crop_year for provenance
+    if "crop_year" in df.columns:
+        dim_year = _load_dim_crop_year()
+        if not dim_year.empty:
+            df = df.merge(dim_year, on="crop_year", how="left")
+
     output_cols = [
         "id",
         "crop_year",
@@ -79,6 +101,7 @@ def _build_fact_crush_stats(crush_df: pd.DataFrame) -> pd.DataFrame:
         "wt_price_per_ton",
         "tons_crushed",
         "report_type",
+        "source_url",
     ]
     # Keep only columns that exist
     available = [c for c in output_cols if c in df.columns]
@@ -97,6 +120,7 @@ def _build_fact_crush_summary(crush_df: pd.DataFrame) -> pd.DataFrame:
                 "grape_type_code",
                 "total_tons",
                 "avg_price_per_ton",
+                "source_url",
             ]
         )
 
@@ -121,6 +145,12 @@ def _build_fact_crush_summary(crush_df: pd.DataFrame) -> pd.DataFrame:
         axis=1,
     )
 
+    # Join in source_url from dim_crop_year for provenance
+    if "crop_year" in df.columns:
+        dim_year = _load_dim_crop_year()
+        if not dim_year.empty:
+            df = df.merge(dim_year, on="crop_year", how="left")
+
     output_cols = [
         "id",
         "crop_year",
@@ -129,6 +159,7 @@ def _build_fact_crush_summary(crush_df: pd.DataFrame) -> pd.DataFrame:
         "grape_type_code",
         "total_tons",
         "avg_price_per_ton",
+        "source_url",
     ]
     available = [c for c in output_cols if c in df.columns]
     return df[available].reset_index(drop=True)
